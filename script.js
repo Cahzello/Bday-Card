@@ -14,8 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
       musicbtn.classList.add("btn-light");
       musicbtn.classList.remove("bg-dark");
       musicbtn.classList.add("bg-light");
+      document.querySelectorAll(`.ballon`).forEach((ballon) => {
+        ballon.classList.remove("animate");
+    });
     } else {
       hbdauido.play();
+      document.querySelectorAll(`.ballon`).forEach((ballon) => {
+          ballon.classList.add("animate");
+      });
     }
   });
 

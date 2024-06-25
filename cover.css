@@ -85,9 +85,43 @@ h1 {
 .ballon {
   position: absolute;
   top: 50vh;
-  right: 5vw;   
+  right: 5vw;
   width: 14%;
   z-index: -100;
+}
+
+.sticker {
+  position: absolute;
+  top: 50vh;
+  right: 5vw;
+  width: 14%;
+  z-index: -100;
+}
+
+.animate {
+  animation: rotasi 5s infinite;
+}
+
+@keyframes rotasi {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75%{
+    transform: rotate(30deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 .jarak-1 {
@@ -115,7 +149,7 @@ h1 {
   left: calc(var(--jarak) / 5);
 }
 
-.jarak-6{
+.jarak-6 {
   top: calc((var(--jarak)) * 2.5);
   left: calc(var(--jarak) + 60px);
 }
