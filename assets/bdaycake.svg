@@ -1,0 +1,190 @@
+<svg width="100%" height="100%" viewBox="0 0 540 540"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+     
+  <desc><![CDATA[
+    Birthday Cake with Flickering Candles
+   
+    Inspired by openclipart image https://openclipart.org/detail/2566/cake
+  
+    Variation of the image used in the free eBook, I Love to Color, Play, and Learn
+    Also used in another free eBook, A New Day
+    Both available from CattoCreations.com
+  
+    Jay Nick
+    STEAMcoded.org
+  ]]>
+  </desc>
+     
+  <style type="text/css"><![CDATA[
+   @import 'https://fonts.googleapis.com/css?family=Delius+Swash+Caps';
+  ]]>
+  </style>
+  
+  <script type="application/x-javascript"><![CDATA[
+    var cake = new function()
+    {
+      var deg = new Array(-10,0,10);
+
+      window.addEventListener("load", flicker);
+  
+      function flicker()
+      {
+        var num;
+        
+        for(var i=1;i<10;i++)
+        {
+          num = Math.floor(Math.random()*3);
+          document.getElementById("f"+i).setAttribute("transform","rotate("+deg[num]+",7,18)");
+        }
+       setTimeout(flicker,200);
+      }
+    }();
+  ]]>
+  </script>
+
+  <g style="stroke:red;stroke-width:16">
+    <g style="fill:#ffff44;">
+      <ellipse cx="270" cy="440" rx="250" ry="80"/>
+      <rect x="28" y="240" width="484" height="200" style="stroke:none" />
+    </g>
+    <g style="stroke-width:10;">
+      <ellipse cx="270" cy="240" rx="245" ry="100" style="fill:pink;" />
+    </g>
+  </g>
+  
+  <g style="text-anchor:middle;font-size:60px;font-style:italic;font-family:'Delius Swash Caps', cursive;">
+    <g style="fill:red;" transform="translate(270,215)">
+      <text>Happy</text>
+      <text y="70">Birthday</text>
+    </g>
+  </g>
+  
+  <g transform="translate(70,130)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:red;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f1" transform="rotate(0,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(120,180)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:cyan;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f2" transform="rotate(5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(165,80)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:orange;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f3" transform="rotate(-5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(215,130)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:yellow;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f4" transform="rotate(0,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(280,200)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:lime;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f5" transform="rotate(5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(315,60)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:purple;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f6" transform="rotate(-5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(365,130)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:magenta;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f7" transform="rotate(0,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(415,180)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:navy;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f8" transform="rotate(5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(465,110)" style="stroke:black;stroke-width:2;">
+    <rect x="9" y="-12" width="2" height="15" style="fill:black;" />
+    <g style="fill:green;">
+      <path d="M0,0q10,4,20,0l0,110q-10,7,-20,0z" />
+    </g>
+    <g transform="translate(10,-26)">
+      <g id="f9" transform="rotate(-5,7,18)">
+        <ellipse cx="0" cy="0" rx="7" ry="18" style="fill:orange;stroke:none;opacity:0.4" />
+        <ellipse cx="0" cy="4" rx="5" ry="14" style="fill:yellow;stroke:none;opacity:0.9" />
+      </g>
+    </g>
+  </g>
+  
+  <g style="stroke:black;stroke-width:1;">
+    <ellipse cx="70" cy="350" rx="20" ry="17" style="fill:green;" />
+    <ellipse cx="130" cy="430" rx="20" ry="17" style="fill:blue;" />
+    <ellipse cx="205" cy="380" rx="20" ry="17" style="fill:red;" />
+    <ellipse cx="275" cy="455" rx="20" ry="17" style="fill:cyan;" />
+    <ellipse cx="345" cy="380" rx="20" ry="17" style="fill:orange;" />
+    <ellipse cx="420" cy="430" rx="20" ry="17" style="fill:lime;" />
+    <ellipse cx="470" cy="350" rx="20" ry="17" style="fill:magenta;" />
+  </g>
+  
+</svg>
