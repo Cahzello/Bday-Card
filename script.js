@@ -18,4 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hbdauido.play();
     }
   });
+
+  console.log(Date());
 });
