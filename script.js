@@ -1,31 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let hbdauido = document.getElementById("audiohbd");
+  let hbdaudio = document.getElementById("audiohbd");
   let index = 1;
   let firstCounter = 1;
-  let musicbtn = document.getElementById("playmusic");
   let btnsection = document.getElementById("btnsection");
-  hbdauido.volume = 0.3;
+  let firstBtn = document.getElementById("firstBtn");
+  let firstScreen = document.getElementById("firstScreen");
+  let muteMusic = document.getElementById("muteMusic");
+  hbdaudio.volume = 0.3;
 
   msgCarousel(index);
-  musicbtn.addEventListener("click", () => {
-    musicbtn.classList.remove("btn-light");
-    musicbtn.classList.add("btn-dark");
-    musicbtn.classList.remove("bg-light");
-    musicbtn.classList.add("bg-dark");
-    if (!hbdauido.paused) {
-      hbdauido.pause();
-      musicbtn.classList.remove("btn-dark");
-      musicbtn.classList.add("btn-light");
-      musicbtn.classList.remove("bg-dark");
-      musicbtn.classList.add("bg-light");
+
+  muteMusic.addEventListener("click", () => {
+    if (!hbdaudio.paused) {
+      hbdaudio.pause();
+    } else {
+      hbdaudio.play();
+    }
+  });
+
+  firstBtn.addEventListener("click", () => {
+    firstScreen.classList.remove("d-flex");
+    firstScreen.classList.add("disappear");
+    firstScreen.addEventListener("animationend", () => {
+      firstScreen.setAttribute("style", "display: none !important;");
+    });
+    if (!hbdaudio.paused) {
+      hbdaudio.pause();
       document.querySelectorAll(`.ballon`).forEach((ballon, k) => {
         ballon.classList.remove("animate");
         ballon.classList.remove("animate2");
       });
     } else {
-      hbdauido.play();
+      hbdaudio.play();
       document.querySelectorAll(`.ballon`).forEach((ballon, k) => {
-        if(k % 2 == 1){
+        if (k % 2 == 1) {
           ballon.classList.add("animate2");
         } else {
           ballon.classList.add("animate");
@@ -49,9 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.classList.add("btn-light");
     nextBtn.classList.add("mx-2");
     nextBtn.style.animation = "popup 2s";
-    nextBtn.addEventListener("click", (param) => {
-      // console.log(param);
-      msgCarousel(index += 1);
+    nextBtn.addEventListener("click", () => {
+      msgCarousel((index += 1));
     });
     btnsection.append(nextBtn);
   }
@@ -66,9 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
       index = hasil.length;
     }
     for (let i = 0; i < hasil.length; i++) {
-      hasil[i].style.display = 'none';
+      hasil[i].style.display = "none";
     }
-    hasil[index - 1].style.display = 'block';
+    hasil[index - 1].style.display = "block";
     console.log(index);
   }
 });

@@ -63,8 +63,36 @@ body {
 }
 
 h1 {
-  font-family: "EB Garamond";
+  font-family: "EB Garamond", Arial, Helvetica, sans-serif;
 }
+
+#muteMusic{
+  background-color: var(--bs-white);
+}
+
+#firstScreen {
+  z-index: 101;
+  background-color: var(--bs-gray-dark);
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+@keyframes firstScreenAnimation {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.disappear{
+  animation: firstScreenAnimation 2s ease-in-out forwards;
+}
+
 
 .cake {
   position: absolute;
@@ -107,7 +135,7 @@ h1 {
 }
 
 
-.slides{
+.slides {
   display: none;
 }
 
