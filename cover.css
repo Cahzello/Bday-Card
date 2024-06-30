@@ -79,6 +79,11 @@ h1 {
   height: 100vh;
 }
 
+#firstBtn{
+  display: none;
+}
+
+
 @keyframes firstScreenAnimation {
   from {
     opacity: 1;

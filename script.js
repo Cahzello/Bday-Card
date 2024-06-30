@@ -1,13 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+  let firstBtn = document.getElementById("firstBtn");
   let hbdaudio = document.getElementById("audiohbd");
   let index = 1;
   let firstCounter = 1;
   let btnsection = document.getElementById("btnsection");
-  let firstBtn = document.getElementById("firstBtn");
   let firstScreen = document.getElementById("firstScreen");
   let muteMusic = document.getElementById("muteMusic");
-  hbdaudio.volume = 0.3;
 
+  firstBtn.style.display = "block";
+  firstScreen.querySelector("p").style.display = "none";
+  hbdaudio.volume = 0.3;
+  mobileCalc();
   msgCarousel(index);
 
   muteMusic.addEventListener("click", () => {
@@ -65,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function msgCarousel(n) {
     let hasil = document.getElementsByClassName("slides");
-    console.log(index);
     if (n > hasil.length) {
       index = 1;
     }
@@ -76,15 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
       hasil[i].style.display = "none";
     }
     hasil[index - 1].style.display = "block";
-    console.log(index);
   }
 
   function mobileCalc() {
-    let sizeWidth = window.matchMedia('(max-width: 600px)');
-    document.getElementsByClassName('jarak-7').remove;
-    
-
-
+    let sizeWidth = window.matchMedia("(max-width: 600px)");
+    let aven = document.getElementsByClassName("jarak-7");
+    if (sizeWidth.matches) {
+      aven.remove;
+      console.log(aven);
+      console.log(sizeWidth);
+    } else {
+      console.log("sfsdf");
+    }
   }
-
 });
