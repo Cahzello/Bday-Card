@@ -78,4 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
     hasil[index - 1].style.display = "block";
     console.log(index);
   }
+
+  function mobileCalc() {
+    let sizeWidth = window.matchMedia('(max-width: 600px)');
+    document.getElementsByClassName('jarak-7').remove;
+    
+
+
+  }
+
 });
