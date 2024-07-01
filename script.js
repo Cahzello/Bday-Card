@@ -12,7 +12,6 @@ window.addEventListener("load", () => {
   hbdaudio.volume = 0.3;
   mobileCalc();
   msgCarousel(index);
-  setInterval(getDate, 1000);
 
   muteMusic.addEventListener("click", () => {
     if (!hbdaudio.paused) {
