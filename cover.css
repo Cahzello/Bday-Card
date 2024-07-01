@@ -133,14 +133,6 @@ h1 {
   transform: scale(1.3);
 }
 
-.kk{
-  transition: transform .2s;
-}
-
-.kk:hover{
-  transition: transform .2s;
-}
-
 .animate {
   animation: rotasi 5s infinite linear;
 }

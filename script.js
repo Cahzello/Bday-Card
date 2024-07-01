@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
   hbdaudio.volume = 0.3;
   mobileCalc();
   msgCarousel(index);
+  setInterval(getDate, 1000);
 
   muteMusic.addEventListener("click", () => {
     if (!hbdaudio.paused) {
@@ -82,13 +83,9 @@ window.addEventListener("load", () => {
 
   function mobileCalc() {
     let sizeWidth = window.matchMedia("(max-width: 600px)");
-    let aven = document.getElementsByClassName("jarak-7");
+    let aven = document.querySelector(".jarak-7");
     if (sizeWidth.matches) {
-      aven.remove;
-      console.log(aven);
-      console.log(sizeWidth);
-    } else {
-      console.log("sfsdf");
+      aven.remove();
     }
   }
 });
